@@ -11,12 +11,10 @@ input.forEach(el => {
         erroIdade.innerHTML = '';
 
         if (nome.value.length > 10) {
-            console.log("Limite 10 caracteres");
             erroNome.innerHTML = 'Limite 10 caracteres';
         }
 
         if (idade.value < 1 || idade.value > 9 || idade.value.length !== 1) {
-            console.log("Deve ser entre 0 e 10");
             erroIdade.innerHTML = 'Deve ser entre 0 e 10';
         }
     });

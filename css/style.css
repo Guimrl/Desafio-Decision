@@ -3,13 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 :root {
     --color-violet: #6A68BE;
     --color-white: #E1E1F2;
+    --color-red: #e01e37;
     --font-size: 1.2em;
 }
 
@@ -63,6 +64,21 @@ input::placeholder {
 }
 
 small {
-    color: red;
+    color: var(--color-red);
     margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+    section {
+        min-width: 200px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .input, small {
+        margin-bottom: 0;
+    }
 }
